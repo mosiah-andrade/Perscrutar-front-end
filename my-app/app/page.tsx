@@ -1,64 +1,81 @@
-import Image from "next/image";
+"use client";
+
+import { supabase } from '../src/lib/supabase';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      console.error('Erro no login:', error.message);
+      alert('Falha ao entrar: ' + error.message);
+    } else {
+      console.log('Logado!', data.user);
+      
+      // O router.refresh() é vital para atualizar as Server Actions e o Middleware
+      router.refresh(); 
+      
+      // Redireciona imediatamente após o refresh
+      router.push('/dashboard');
+    }
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex flex-col flex-1 items-center justify-center bg-[linear-gradient(180deg,_#36312E_50.52%,_#D4D4D4_110.06%)]">
+      <main className="flex flex-1 w-full m-auto flex-col items-center justify-center py-32 px-16 sm:items-start">
+          <h1 className="text-5xl font-bold text-center sm:text-left">
+            Perscrutar
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="mt-4 text-2xl text-center sm:text-left">
+            O sistema de controle de acesso com reconhecimento facila e Tags
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <form onSubmit={handleLogin}
+            className="mt-8 w-full max-w-md p-8"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+            <div className="flex flex-col gap-4">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={email}
+                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 color-black"
+                placeholder="E-mail"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                value={password}
+                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
+                placeholder="Senha"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="flex items-center mt-4">
+              <input type="checkbox" name="remember" id="remember" className="mr-2" />
+              <label htmlFor="remember" className="text-lg font-medium">
+                Manter-me conectado
+              </label>
+            </div>
+            <button
+              type="submit"
+              className="rounded-[8.066px] bg-[#DF6A3F] hover:bg-[#C15A35] text-white font-bold py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full m-6 cursor-pointer"
+            >
+              Entrar
+            </button>
+          </form>
       </main>
     </div>
   );
