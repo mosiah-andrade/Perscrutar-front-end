@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../app/globals.css";
+import Moldura from "../componentes/Moldura"; // Importe com M maiúsculo
+import "../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +30,9 @@ export default function RootLayout({
     >
       <body className="h-full">
         {/* Usando o componente como Moldura (PascalCase) */}
-        
-        {children}
-        
+        <Moldura>
+          {children}
+        </Moldura>
       </body>
     </html>
   );
