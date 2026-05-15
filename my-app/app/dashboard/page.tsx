@@ -1,8 +1,9 @@
 import { ArrowUpRight, UsersRound, CircleAlert, ShieldAlert, Video, CircleCheck, Radio, Clock  } from 'lucide-react';
 import FluxoGrafico from '../componentes/FluxoGrafico';
+import LogTable from '../componentes/TabelaUsuarios';
 export default function Home() {  
   return (
-      <main className="bg-[#E5E5E5] h-full flex flex-1 w-full m-auto flex-col items-center justify-center py-15 px-25 sm:items-start" flex-wrap>
+      <main className="bg-[#E5E5E5] h-full flex flex-1 w-full m-auto flex-col items-center justify-center py-15 px-25 sm:items-start">
         <div className="flex justify-between mb-8 w-full flex-wrap gap-4">
           <div className="w-[221px] h-[166px] bg-white rounded-xl flex flex-row p-[20px] items-center justify-center" >
             <div className="flex flex-col " >
@@ -156,6 +157,8 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        <LogTable/>
       </main>
   );
 }

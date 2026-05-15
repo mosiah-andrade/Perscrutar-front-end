@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { File, Home, Settings} from "lucide-react";
+import { UsersRound, Home, IdCardLanyard} from "lucide-react";
 import Link from "next/link";
 
 export default function Moldura({ children }: { children: React.ReactNode }) {
@@ -11,8 +11,8 @@ export default function Moldura({ children }: { children: React.ReactNode }) {
 
   const menuItems = [
     { name: "Dashboard", href: "/", icon: Home },
-    { name: "Projetos", href: "/projetos", icon: File },
-    { name: "Configurações", href: "/configuracoes", icon: Settings },
+    { name: "Usuarios", href: "dashboard/usuarios", icon: UsersRound },
+    { name: "Cadastro de Usuario", href: "dashboard/cadastroUsuario", icon: IdCardLanyard },
   ];
 
   return (
