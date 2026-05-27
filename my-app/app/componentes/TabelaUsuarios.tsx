@@ -22,7 +22,7 @@ const mockData: LogRow[] = [
 
 export default function LogTable() {
   return (
-    <div className="w-full max-w-7xl mx-auto p-4  min-h-screen font-sans text-gray-700">
+    <div className="w-full max-w-7xl mx-auto pt-8  min-h-screen font-sans text-gray-700">
       
       {/* HEADER DA SEÇÃO */}
       <div className="flex justify-between items-center mb-6 px-4">

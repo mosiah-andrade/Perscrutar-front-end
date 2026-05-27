@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-full flex flex-col flex-1 items-center justify-center bg-[linear-gradient(180deg,_#36312E_50.52%,_#D4D4D4_110.06%)]">
+    <div className="h-full flex flex-col flex-1 items-center justify-center bg-[linear-gradient(180deg,_#36312E_50.52%,_#D4D4D4_110.06%)] text-gray-200">
       <main className="flex flex-1 w-full m-auto flex-col items-center justify-center py-32 px-16 sm:items-start">
           <h1 className="text-5xl font-bold text-center sm:text-left">
             Perscrutar
@@ -45,7 +45,7 @@ export default function Home() {
                 id="email"
                 name="email"
                 value={email}
-                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black-600"
+                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-800 text-gray-600"
                 placeholder="E-mail"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -54,7 +54,7 @@ export default function Home() {
                 id="password"
                 name="password"
                 value={password}
-                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400 text-black-600"
+                className="rounded-[8.066px] bg-white border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-800 text-gray-600"
                 placeholder="Senha"
                 onChange={(e) => setPassword(e.target.value)}
               />

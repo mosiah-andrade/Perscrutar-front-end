@@ -22,12 +22,12 @@ export default function Home() {
             <div className="flex flex-col " >
               <p className="text-gray-400 text-sm">Alerta de Segurança</p>
               <span className="text-[40px] font-bold text-red-500">03</span>
-              <p className="flex items-center gap-1 text-red-500" >
+              <div className="flex items-center gap-1 text-red-500" >
                 <ShieldAlert size={16}/>
                 <div className="text-xs w-[70%]" >
                   Requer Atenção Imediata
                 </div>
-              </p>
+              </div>
             </div>
             <CircleAlert size={40} className="text-[#EF4444] bg-[#FEE2E2] p-2 rounded-xl" />
           </div>
@@ -35,12 +35,12 @@ export default function Home() {
             <div className="flex flex-col " >
               <p className="text-gray-400 text-sm">Cameras Online</p>
               <span className="text-[40px] font-bold text-black">124 <span className="text-[20px] text-gray-400">/128</span></span>
-              <p className="flex items-center gap-1 text-green-500" >
+              <div className="flex items-center gap-1 text-green-500" >
                 <CircleCheck size={16}/>
                 <div className="text-xs w-[60%]" >
                   96,8% Uptime Sistema
                 </div>
-              </p>
+              </div>
             </div>
             <Video size={40} className="text-[#1E3A8A] bg-[#EFF6FF] p-2 rounded-xl" />
           </div>
@@ -48,12 +48,12 @@ export default function Home() {
             <div className="flex flex-col " >
               <p className="text-gray-400 text-sm">Acesso do dia</p>
               <span className="text-[40px] font-bold text-black">1.842</span>
-              <p className="flex items-center gap-1 text-green-500" >
+              <div className="flex items-center gap-1 text-green-500" >
                 <Clock size={16}/>
                 <div className="text-xs w-[60%]" >
                   Ultimo acesso às 17:45
                 </div>
-              </p>
+              </div>
             </div>
             <Radio size={40} className="text-[#1E3A8A] bg-[#EFF6FF] p-2 rounded-xl" />
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
               
               <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="" alt="" className="w-auto h-[80%] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
@@ -102,7 +102,7 @@ export default function Home() {
               </li>
               <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="" alt="" className="w-auto h-[80%] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
@@ -129,7 +129,7 @@ export default function Home() {
               </li>
               <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="" alt="" className="w-auto h-[80%] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
