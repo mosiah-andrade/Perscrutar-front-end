@@ -50,7 +50,7 @@ export default function Moldura({
                 prefetch={false}
                 className={`flex flex-col items-center justify-center p-3 rounded-xl transition-all ${
                   active
-                    ? "bg-blue-600 text-white shadow-lg shadow-blue-900/20"
+                    ? "bg-[var(--color-roxo-200)] text-white shadow-lg shadow-blue-900/20"
                     : "text-slate-400 hover:text-white hover:bg-slate-800"
                 }`}
               >

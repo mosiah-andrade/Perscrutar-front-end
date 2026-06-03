@@ -33,9 +33,9 @@ export default function Usuarios() {
                 label= "+3 Novas Solicitações"
               />
               {/* <Card titulo="Tags Bloqueada" /> */}
-              <div className="h-[111px] w-[221px] bg-white p-3  rounded-2xl shadow-sm border border-[#DF6A3F] flex flex-col justify-between">
-                <h3 className="text-[19px] text-[#DF6A3F]  font-bold">Controlhe de Acesso</h3>
-                <a href="/dashboard/cadastroUsuario" className=" text-center border border-[#DF6A3F] text-[#A39787]  rounded-sm hover:rounded-none hover:bg-green-800 transition-colors duration-300 ease-in-out hover:text-white flex justify-around align-center p-1"> <UserPlus size={19}/>  Novo Cadastro</a>
+              <div className="h-[111px] w-[221px] bg-white p-3  rounded-2xl shadow-sm border border-[var(--color-roxo-600)] flex flex-col justify-between">
+                <h3 className="text-[19px] text-[var(--color-roxo-200)]  font-bold">Controlhe de Acesso</h3>
+                <a href="/dashboard/cadastroUsuario" className=" text-center border border-[var(--color-roxo-600)] text-[var(--color-roxo-200)]  rounded-sm hover:rounded-none hover:bg-green-800 transition-colors duration-300 ease-in-out hover:text-white flex justify-around align-center p-1"> <UserPlus size={19}/>  Novo Cadastro</a>
               </div>
               
             </div>

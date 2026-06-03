@@ -3,6 +3,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --roxo-600: #341A61;
+  --roxo-300: #4b1c9b;
+  --roxo-200: #7b58b8;
+  --cinza-200: #D7D7D7;
+}
+
+.button {
+  background-color: var(--roxo-600);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--roxo-200);
 }
 
 @theme inline {
@@ -10,6 +23,10 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-roxo-600: var(--roxo-600);
+  --color-roxo-300: var(--roxo-300);
+  --color-roxo-200: var(--roxo-200);
+  --color-cinza-200: var(--cinza-200);
 }
 
 @media (prefers-color-scheme: dark) {

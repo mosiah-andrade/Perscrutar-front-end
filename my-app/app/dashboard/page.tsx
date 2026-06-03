@@ -16,7 +16,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <UsersRound size={40} className="text-[#1E3A8A] bg-[#EFF6FF] p-2 rounded-xl" />
+            <UsersRound size={40} className="text-cinza-200 bg-[var(--roxo-200)] p-2 rounded-xl" />
           </div>
           <div className="w-[221px] h-[166px] bg-white rounded-xl flex flex-row p-[20px] items-center justify-center" >
             <div className="flex flex-col " >
@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Video size={40} className="text-[#1E3A8A] bg-[#EFF6FF] p-2 rounded-xl" />
+            <Video size={40} className="text-cinza-200 bg-[var(--roxo-200)] p-2 rounded-xl" />
           </div>
           <div className="w-[221px] h-[166px] bg-white rounded-xl flex flex-row p-[20px] items-center justify-center" >
             <div className="flex flex-col " >
@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Radio size={40} className="text-[#1E3A8A] bg-[#EFF6FF] p-2 rounded-xl" />
+            <Radio size={40} className="text-cinza-200 bg-[var(--roxo-200)] p-2 rounded-xl"  />
           </div>
           
         </div>
@@ -73,19 +73,19 @@ export default function Home() {
                 Alerta
               </div>
               
-              <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
+              <li className="text-[11px] text-gray-200 border-b pb-2 bg-[var(--color-roxo-200)] p-4 flex justify-between items-start gap-4 border border-[var(--color-roxo-600)] rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-[var(--color-roxo-600)]" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="font-bold text-gray-700">Elevador 2</span>
+                    <span className="font-bold text-gray-200">Elevador 2</span>
                   </div>
                   <p className='text-justify'>Lorem ipsum dolor sit amet, consecte</p>
                   <div className="flex gap-4 mt-2 font-medium">
                     <a 
                       href="#" 
-                      className="text-white bg-blue-900 px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-blue-800 hover:underline"
+                      className="text-white bg-[var(--color-roxo-600)] px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-[var(--color-roxo-300)] hover:underline"
                     >
                       Ver câmera
                     </a>
@@ -100,19 +100,19 @@ export default function Home() {
                 
                 <span className="text-[10px] whitespace-nowrap">14:22</span>
               </li>
-              <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
+              <li className="text-[11px] text-gray-200 border-b pb-2 bg-[var(--color-roxo-200)] p-4 flex justify-between items-start gap-4 border border-[var(--color-roxo-600)] rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-[var(--color-roxo-600)]" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="font-bold text-gray-700">Elevador 2</span>
+                    <span className="font-bold text-gray-200">Elevador 2</span>
                   </div>
                   <p className='text-justify'>Lorem ipsum dolor sit amet, consecte</p>
                   <div className="flex gap-4 mt-2 font-medium">
                     <a 
                       href="#" 
-                      className="text-white bg-blue-900 px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-blue-800 hover:underline"
+                      className="text-white bg-[var(--color-roxo-600)] px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-[var(--color-roxo-300)] hover:underline"
                     >
                       Ver câmera
                     </a>
@@ -127,19 +127,19 @@ export default function Home() {
                 
                 <span className="text-[10px] whitespace-nowrap">14:22</span>
               </li>
-              <li className="text-[11px] text-gray-500 border-b pb-2 bg-[#E0D8D8] p-4 flex justify-between items-start gap-4 border border-red-500 rounded-[4px]">
+              <li className="text-[11px] text-gray-200 border-b pb-2 bg-[var(--color-roxo-200)] p-4 flex justify-between items-start gap-4 border border-[var(--color-roxo-600)] rounded-[4px]">
                 {/* flex-shrink-0 impede que a imagem fique oval ao ser "esmagada" */}
-                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-red-500" />
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.hGSCbXlcOjL_9mmzerqAbQHaHa" alt="" className="w-auto h-[80%] max-h-[80px] m-auto flex-shrink-0 aspect-square rounded-full object-cover border border-[var(--color-roxo-600)]" />
                 
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="font-bold text-gray-700">Elevador 2</span>
+                    <span className="font-bold text-gray-200">Elevador 2</span>
                   </div>
                   <p className='text-justify'>Lorem ipsum dolor sit amet, consecte</p>
                   <div className="flex gap-4 mt-2 font-medium">
                     <a 
                       href="#" 
-                      className="text-white bg-blue-900 px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-blue-800 hover:underline"
+                      className="text-white bg-[var(--color-roxo-600)] px-3 rounded-sm h-7 flex items-center justify-center text-xs font-medium transition-colors hover:bg-[var(--color-roxo-300)] hover:underline"
                     >
                       Ver câmera
                     </a>
@@ -154,6 +154,7 @@ export default function Home() {
                 
                 <span className="text-[10px] whitespace-nowrap">14:22</span>
               </li>
+              
             </ul>
           </div>
         </div>

@@ -33,11 +33,11 @@ export default function FluxoGrafico() {
         </h2>
         <div className="flex gap-4">
           <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-[#D95D39]"></span>
+            <span className="w-3 h-3 rounded-full bg-[var(--color-roxo-600)]"></span>
             <span className="text-sm text-gray-500">Entrada</span>
           </div>
           <div className="flex items-center gap-2">
-            <span className="w-3 h-3 rounded-full bg-[#F2D7D0]"></span>
+            <span className="w-3 h-3 rounded-full bg-[var(--color-roxo-200)]"></span>
             <span className="text-sm text-gray-500">Saída</span>
           </div>
         </div>
@@ -69,14 +69,14 @@ export default function FluxoGrafico() {
             <Bar 
               dataKey="entrada" 
               stackId="a" 
-              fill="#D95D39" 
+              fill="var(--color-roxo-600)" 
               radius={[0, 0, 0, 0]} 
               barSize={45}
             />
             <Bar 
               dataKey="saida" 
               stackId="a" 
-              fill="#F2D7D0" 
+              fill="var(--color-roxo-200)" 
               radius={[4, 4, 0, 0]} 
               barSize={45}
             />

@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <button
               type="submit"
-              className="rounded-[8.066px] bg-[#DF6A3F] hover:bg-[#C15A35] text-white font-bold py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full m-6 cursor-pointer"
+              className="rounded-[8.066px] bg-[#DF6A3F] hover:bg-[#C15A35] text-white font-bold py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full m-6 cursor-pointer button"
             >
               Entrar
             </button>

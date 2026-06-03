@@ -219,7 +219,7 @@ export default function CadastroUsuario() {
                 <button
                   type="button"
                   onClick={handleScan}
-                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-[#E0663B] text-[#E0663B] font-medium text-sm hover:bg-orange-50 transition"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-[var(--color-roxo-300)] text-[var(--color-roxo-200)] font-medium text-sm hover:text-[var(--color-roxo-300)] transition button"
                 >
                   <Radio size={16} />
                   Escanear
@@ -256,13 +256,13 @@ export default function CadastroUsuario() {
           <div className="flex gap-4 mt-6">
             <button
               type="submit"
-              className="px-8 py-3 bg-[#DE673A] text-white font-semibold text-sm rounded-lg hover:bg-[#c9562b] transition shadow-sm"
+              className="px-8 py-3  text-white font-semibold text-sm rounded-lg hover:bg-[#c9562b] transition shadow-sm button"
             >
               Salvar
             </button>
             <button
               type="button"
-              className="px-8 py-3 border border-[#DE673A] text-[#DE673A] font-semibold text-sm rounded-lg hover:bg-orange-50 transition"
+              className="px-8 py-3 border border-[var(--color-roxo-200)] text-[var(--color-roxo-200)] font-semibold text-sm rounded-lg hover:bg-[var(--color-gray-200)] hover:cursor-pointer transition"
             >
               Cancelar
             </button>
@@ -274,13 +274,13 @@ export default function CadastroUsuario() {
         <div className="flex flex-col gap-6">
           
           {/* Box de Segurança de Dados */}
-          <div className="bg-[#D9C4B7]/70 rounded-xl p-6 border border-gray-200/40 text-[#A45A36]">
+          <div className="bg-[var(--color-roxo-200)]/70 rounded-xl p-6 border border-[var(--color-roxo-600)]/40 text-gray-200">
             <div className="flex items-start gap-3">
               <div className="mt-1 p-1 bg-white/50 rounded-md">
-                <Shield size={20} className="text-[#DE673A]" />
+                <Shield size={20} className="text-[var(--color-roxo-200)]" />
               </div>
               <div>
-                <h4 className="font-bold text-base text-[#8C4623] mb-2">Segurança de Dados</h4>
+                <h4 className="font-bold text-base text-[var(--color-roxo-600)] mb-2">Segurança de Dados</h4>
                 <p className="text-xs leading-relaxed font-medium">
                   Todos os dados cadastrados no sistema SENAC seguem rigorosamente a LGPD. 
                   As chaves criptográficas das tags RFID são renovadas periodicamente para 
@@ -288,7 +288,7 @@ export default function CadastroUsuario() {
                 </p>
               </div>
             </div>
-            <div className="mt-6 pt-4 border-t border-[#A45A36]/20 flex items-center gap-2 text-[11px] font-bold tracking-wider uppercase text-[#8C4623]">
+            <div className="mt-6 pt-4 border-t border-[var(--color-roxo-600)]/20 flex items-center gap-2 text-[11px] font-bold tracking-wider uppercase text-[var(--color-roxo-600)]">
               <Shield size={14} />
               Criptografia AES-256 Ativa
             </div>

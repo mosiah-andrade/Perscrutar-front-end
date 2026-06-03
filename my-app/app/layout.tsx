@@ -27,7 +27,8 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="h-full">
+    
+      <body className="h-full" suppressHydrationWarning>
         {/* Usando o componente como Moldura (PascalCase) */}
         
         {children}
