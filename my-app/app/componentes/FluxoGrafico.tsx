@@ -25,7 +25,7 @@ const data = [
 
 export default function FluxoGrafico() {
   return (
-    <div className="w-full bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+    <div className="w-full h-[450px] bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
       {/* Header do Card */}
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-xl font-bold text-slate-800">
