@@ -12,7 +12,7 @@ interface PerfilProps {
 }
 
 // 2. Aplicação da interface 'PerfilProps' nos parâmetros desestruturados
-export default function Perfil({ formData, imagePreview }: PerfilProps) {
+export default function Perfil({ formData, imagePreview }: any) {
   // Simulando dados caso não venham por props (apenas para exemplo)
   const dados = formData || {
     nomeCompleto: "João Silva Sauro",
