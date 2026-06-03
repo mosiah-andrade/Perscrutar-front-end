@@ -1,4 +1,4 @@
-// 1. Definição da interface mapeando todos os campos que seu componente consome
+// 1. Definição da estrutura de tipos para o componente
 interface PerfilProps {
   formData?: {
     nomeCompleto?: string;
@@ -11,7 +11,7 @@ interface PerfilProps {
   imagePreview?: string | null;
 }
 
-// 2. Vinculando os argumentos desestruturados à interface criada
+// 2. Aplicação da interface 'PerfilProps' nos parâmetros desestruturados
 export default function Perfil({ formData, imagePreview }: PerfilProps) {
   // Simulando dados caso não venham por props (apenas para exemplo)
   const dados = formData || {
