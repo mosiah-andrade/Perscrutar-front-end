@@ -1,6 +1,18 @@
+// 1. Definição da interface mapeando todos os campos que seu componente consome
+interface PerfilProps {
+  formData?: {
+    nomeCompleto?: string;
+    matricula?: string;
+    email?: string;
+    cargoSetor?: string;
+    tagId?: string;
+    statusInicial?: string;
+  };
+  imagePreview?: string | null;
+}
 
-
-export default function Perfil({ formData, imagePreview }) {
+// 2. Vinculando os argumentos desestruturados à interface criada
+export default function Perfil({ formData, imagePreview }: PerfilProps) {
   // Simulando dados caso não venham por props (apenas para exemplo)
   const dados = formData || {
     nomeCompleto: "João Silva Sauro",
@@ -98,8 +110,6 @@ export default function Perfil({ formData, imagePreview }) {
               </div>
             </div>
           </div>
-
-        
 
         </div>
 
