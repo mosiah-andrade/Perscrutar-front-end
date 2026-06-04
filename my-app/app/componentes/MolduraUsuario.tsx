@@ -4,6 +4,7 @@ import React from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { UsersRound, Home, LogOut } from "lucide-react";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Moldura({
   children,
@@ -44,9 +45,14 @@ export default function Moldura({
         
         {/* Bloco Superior: Logo e Navegação */}
         <div className="flex flex-col items-center w-full">
-          <div className="mb-10 font-bold text-xl text-blue-400">
-            P.
-          </div>
+          <Image
+            src= "/P-Logo-Marca.png"// Caminho direto para a pasta public
+            alt="Animacao do Tentaculo"
+            width={50}          // Defina uma largura base aproximada
+            height={50}         // Defina uma altura base aproximada
+            className="w-full max-w-[80vw] lg:max-w-[45vw] h-auto object-contain mb-4"
+            unoptimized          // CRÍTICO: Sem isso, o Next.js pode travar a animação do GIF
+          />
 
           <nav className="flex flex-col gap-6">
             {menuItems.map((item) => {
@@ -85,10 +91,15 @@ export default function Moldura({
       </aside>
 
       <div className="flex flex-col flex-1 ml-[76px]">
-        <header className="h-16 border-b bg-white flex items-center px-8 sticky top-0 z-10">
-          <h1 className="text-xl font-bold text-slate-800">
-            Perscrutar
-          </h1>
+        <header className="h-[60px] border-b  flex items-center px-8 sticky top-0 z-10 bg-[var(--color-roxo-200)]">
+          <Image
+            src= "/Perscrutar-ApresentaçãoIot.png"// Caminho direto para a pasta public
+            alt="Animacao do Tentaculo"
+            width={150}          // Defina uma largura base aproximada
+            height={45}         // Defina uma altura base aproximada
+            className="h-160 h-auto object-contain m-4"
+            unoptimized          // CRÍTICO: Sem isso, o Next.js pode travar a animação do GIF
+          />
         </header>
 
         <main className="bg-gray-50 min-h-[calc(100vh-64px)]">

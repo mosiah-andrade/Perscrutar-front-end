@@ -3,10 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --roxo-600: #341A61;
+  --roxo-600: #341c62 ;
   --roxo-300: #4b1c9b;
-  --roxo-200: #7b58b8;
+  --roxo-200: #584479;
   --cinza-200: #D7D7D7;
+  --bg-gradient-main: linear-gradient(180deg, rgba(54, 49, 46, 0.75) 50.52%, rgba(110, 68, 140, 0.8) 110.06%);
 }
 
 .button {
@@ -27,7 +28,9 @@
   --color-roxo-300: var(--roxo-300);
   --color-roxo-200: var(--roxo-200);
   --color-cinza-200: var(--cinza-200);
+  --gradiente: var(--bg-gradient-main);
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
