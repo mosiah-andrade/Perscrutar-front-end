@@ -2,9 +2,13 @@
 
 ## 1. Identificação
 **Nome do Projeto:** Projeto Perscrutar Acesso 
+
 **Equipe:** Brunna Pontual Spanudakis, Heitor Farias Pinheiro do Amaral, Maria Luiza Cavalcanti Valeriano, Marianna Gomes Kottas, Mosiah Assunção Andrade, Victor Militino Santos Gonçalves, Vinicius Marques Gomes Silva
+
 **Turma/Período:** Análise e Desenvolvimento de Sistemas (ADS) - 2026 
+
 **Instituição:** Faculdade Senac Pernambuco 
+
 **UCs Integradas:** Internet das Coisas (IoT) - UC4 
 
 ---
@@ -12,10 +16,10 @@
 ## 2. Links de Acesso
 * **Repositório GitHub (Firmware/IoT):** [https://github.com/Hfaaf/Iot_faceTag](https://github.com/Hfaaf/Iot_faceTag)
 * **Repositório GitHub (Front-end):** [https://github.com/mosiah-andrade/Perscrutar-front-end](https://github.com/mosiah-andrade/Perscrutar-front-end)
-* **Apresentação:** [Link para Slides/PDF](https://canva.link/2v7frcz2v2rdmnt)]
-* **Software/Solução Rodando:** [Site Percrutar](https://perscrutar-front-end.vercel.app/)]
-* **Simulação:** [Link do Wokwi](https://wokwi.com/projects/458856490594274305?classId=21e70d71-96a1-4f9d-9f1c-5f0212dce567&assignmentId=4779f4ca-344c-426a-8131-db760141bf69&submissionId=1238e40d-2702-6b3e-decd-7bf09094b8fb)]
-* **Outros:** [Link Figma](https://www.figma.com/design/F7l8PmTmfDiCkQi8gz7DZs/TAG-RFID?node-id=36-118&t=oR5Yzg0ypVorkbWt-1)]
+* **Apresentação:** [Link para Slides/PDF](https://canva.link/2v7frcz2v2rdmnt)
+* **Software/Solução Rodando:** [Site Percrutar](https://perscrutar-front-end.vercel.app/)
+* **Simulação:** [Link do Wokwi](https://wokwi.com/projects/458856490594274305?classId=21e70d71-96a1-4f9d-9f1c-5f0212dce567&assignmentId=4779f4ca-344c-426a-8131-db760141bf69&submissionId=1238e40d-2702-6b3e-decd-7bf09094b8fb)
+* **Outros:** [Link Figma](https://www.figma.com/design/F7l8PmTmfDiCkQi8gz7DZs/TAG-RFID?node-id=36-118&t=oR5Yzg0ypVorkbWt-1)
 
 ---
 
